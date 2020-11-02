@@ -1,4 +1,11 @@
-//https://artificial-mind.net/blog/2020/09/26/dont-deduce
+/*
+    1/ Don't deduce - T myFunc(const std::vector<T>& myVec,  dont_deduce<T> value1, dont_deduce<T> value2)
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 1/ Don't deduce (https://artificial-mind.net/blog/2020/09/26/dont-deduce)
+// Template functions pose problems for different parameters when template deduction comes into play, which we can fix
+// by forcing any of the parameters as deducible type
 
 template <class T>
 struct dont_deduce_t 
