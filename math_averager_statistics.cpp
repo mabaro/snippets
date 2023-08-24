@@ -1,5 +1,11 @@
 /*
 https://jonisalonen.com/2014/efficient-and-accurate-rolling-standard-deviation/
+
+Di= Yi - Ui-1
+Ui=Ui-1 + 1/i*Di
+Si=Si-1 + ((i-1)/i)*Di^2
+
+    // [ avg' * (n-1) + x ] / n
 */
 #include <numeric>
 #include <cmath>
